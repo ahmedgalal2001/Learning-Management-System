@@ -69,6 +69,7 @@ php artisan db:seed
 To run the Laravel development server, execute the following command:
 
 ```
+npm run dev
 php artisan serve
 ```
 
