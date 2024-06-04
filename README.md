@@ -38,14 +38,25 @@ This project is a Learning Management System (LMS) developed using Laravel. It a
     copy .env.example .env
     ```
     
-5. Configure your database connection in the `.env` file.
-6. Migrate the database:
+5. Generate Application Key:
+
+```tsx
+php artisan key:generate
+```
+
+1. Install Vite:
+
+```tsx
+npm install vite@latest
+```
+
+1. Migrate the database:
     
     ```
     php artisan migrate
     ```
     
-7. Seed the database with dummy data (optional):
+2. Seed the database with dummy data (optional):
     
     ```
     php artisan db:seed
