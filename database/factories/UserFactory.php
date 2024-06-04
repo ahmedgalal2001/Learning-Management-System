@@ -41,4 +41,15 @@ class UserFactory extends Factory
             'email_verified_at' => null,
         ]);
     }
+    public function admin(string $name, string $email, array $customAttributes = []): static
+    {
+        return $this->state(function (array $attributes) use ($name, $email, $customAttributes) {
+            return array_merge([
+                'name' => $name,
+                'email' => $email,
+                'is_admin' => true,
+                'password' => Hash::make('OSALEX123'),
+            ], $customAttributes);
+        });
+    }
 }
