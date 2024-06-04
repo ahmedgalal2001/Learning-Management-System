@@ -56,12 +56,13 @@ npm install vite@latest
     php artisan migrate
     ```
     
-2. Seed the database with dummy data (optional):
-    
-    ```
-    php artisan db:seed
-    ```
-    
+2. Seed the database with dummy data (optional): 
+- this will create 10 courses and 10 user and one admin
+- admin⇒  email:“[ahmedgalal@iti.com](mailto:ahmedgalal@iti.com)” , password:”OSALEX123”
+
+```
+php artisan db:seed
+```
 
 ### Running the Application
 
