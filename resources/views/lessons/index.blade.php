@@ -8,7 +8,7 @@
             {{ __('Lessons for Course : ' . $course->title . '') }}
         </h2>
     </x-slot>
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-8 overflow-x-auto">
         @if (Auth::user()->is_admin)
             <div class="mb-4">
                 <a href="{{ route('lesson.create', $course->id) }}"
@@ -75,7 +75,6 @@
                     <span class="font-medium">Info alert!</span> No lessons found.
                 </div>
             </div>
-
         @endif
     </div>
 </x-app-layout>

@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-8 overflow-x-auto">
         @if (count($courses) > 0)
             <table class="w-full text-sm text-left rtl:text-right text-gray-700 bg-white">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50">
@@ -31,9 +31,9 @@
                                 {{ Str::limit($course->description, 100) }}
                             </td>
 
-                            <td class="px-6 py-4">
+                            <td class="px-6 py-4 flex flex-col md:flex-row justify-center items-center">
                                 <a href="{{ route('lesson.index', $course->id) }}" type="button"
-                                    class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                                    class="mt-3 me-2 text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 md:mb-0 md:me-2">
                                     Show Lessons
                                 </a>
                                 <form action="{{ route('course.unenrollCourse', $course->id) }}" method="POST"
@@ -41,9 +41,10 @@
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit"
-                                        class="mt-3 text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Unenroll</button>
+                                        class="mt-3 md:mt-0 text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Unenroll</button>
                                 </form>
                             </td>
+
                         </tr>
                     @endforeach
                 </tbody>
