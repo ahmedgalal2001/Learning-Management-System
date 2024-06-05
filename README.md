@@ -90,7 +90,7 @@ This will execute all the feature tests defined in the `tests/Feature` directory
 - Register a new account or login if you already have one.
 - Admin users can manage courses and lessons from the admin dashboard.
 - Regular users can enroll in courses, view enrolled courses, and access lessons.
-  ![image](https://github.com/ahmedgalal2001/Learning-Management-System/assets/151751204/93f33c31-cc5a-4cff-96f5-b4347955ac70)
 ![image](https://github.com/ahmedgalal2001/Learning-Management-System/assets/151751204/93f33c31-cc5a-4cff-96f5-b4347955ac70)
-![image](https://github.com/ahmedgalal2001/Learning-Management-System/assets/151751204/93f33c31-cc5a-4cff-96f5-b4347955ac70)
+![image](https://github.com/ahmedgalal2001/Learning-Management-System/assets/151751204/3153c903-c329-46ad-b7fe-21487d9fb386)
+
 
