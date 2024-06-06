@@ -85,6 +85,12 @@ php artisan test
 
 This will execute all the feature tests defined in the `tests/Feature` directory.
 
+## Demo Video
+
+You can watch the demo video for the Learning Management System below:
+
+[Course Management Application Demo](https://youtu.be/NcxiRhOJWCY)
+
 ## Usage
 
 - Register a new account or login if you already have one.
@@ -92,5 +98,4 @@ This will execute all the feature tests defined in the `tests/Feature` directory
 - Regular users can enroll in courses, view enrolled courses, and access lessons.
 ![image](https://github.com/ahmedgalal2001/Learning-Management-System/assets/151751204/93f33c31-cc5a-4cff-96f5-b4347955ac70)
 ![image](https://github.com/ahmedgalal2001/Learning-Management-System/assets/151751204/3153c903-c329-46ad-b7fe-21487d9fb386)
-
 
