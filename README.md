@@ -89,7 +89,7 @@ This will execute all the feature tests defined in the `tests/Feature` directory
 
 You can watch the demo video for the Learning Management System below:
 
-[Course Management Application Demo](https://youtu.be/NcxiRhOJWCY)
+[Link Demo for Youtube](https://youtu.be/NcxiRhOJWCY)
 
 ## Usage
 
